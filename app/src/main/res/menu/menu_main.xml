@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/connect_device"
+        android:icon="@drawable/ic_bluetooth"
+        android:title="@string/label_bluetooth"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/add_alarm"
+        android:icon="@drawable/ic_alarm_add"
+        android:title="@string/label_bluetooth"
+        app:showAsAction="ifRoom" />
+</menu>

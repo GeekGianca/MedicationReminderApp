@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MedicationReminder</string>
+    <string name="label_bluetooth">Conectar</string>
+    <string name="label_string_title">Registros</string>
+    <string name="label_string_title_bluetooth">Conexiones</string>
+    <string name="label_string_splash">MedicamentoApp</string>
+    <string name="hint_string_pill">Nombre del medicamento</string>
+    <string name="hint_string_remind">Fecha recordatorio</string>
+    <string name="label_string_title_pick">Selecciona la fecha</string>
+    <string name="hint_string_time">Hora recordatorio</string>
+    <string name="label_string_bluetooth">Estado Bluetooth</string>
+</resources>

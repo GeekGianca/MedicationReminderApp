@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWithe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutNamePill"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/hint_string_pill"
+            app:errorEnabled="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_book"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/imprima"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:textColor="@color/colorPrimary"
+                app:backgroundTint="@color/colorIcons" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/selectDate"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            app:icon="@drawable/ic_insert_invitation"
+            app:iconSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/layoutDatePill"
+            app:layout_constraintEnd_toEndOf="@+id/layoutNamePill"
+            app:layout_constraintTop_toBottomOf="@+id/layoutNamePill" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutDatePill"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_string_remind"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/selectDate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/layoutNamePill"
+            app:layout_constraintTop_toBottomOf="@+id/layoutNamePill"
+            app:startIconDrawable="@drawable/ic_insert_invitation"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputDatePill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:fontFamily="@font/imprima"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:textColor="@color/colorPrimary"
+                app:backgroundTint="@color/colorIcons" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutTimePill"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/hint_string_time"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/selectTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/layoutDatePill"
+            app:layout_constraintTop_toBottomOf="@+id/layoutDatePill"
+            app:startIconDrawable="@drawable/ic_alarm"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTimePill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:fontFamily="@font/imprima"
+                android:imeOptions="actionNext"
+                android:inputType="time"
+                android:textColor="@color/colorPrimary"
+                app:backgroundTint="@color/colorIcons" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/selectTime"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            app:icon="@drawable/ic_alarm"
+            app:iconSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/layoutTimePill"
+            app:layout_constraintEnd_toEndOf="@+id/selectDate"
+            app:layout_constraintTop_toBottomOf="@+id/layoutDatePill" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
